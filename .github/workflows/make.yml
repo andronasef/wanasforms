@@ -10,14 +10,16 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
 
-      - name: Install dependencies for join form
+      - name: join form
         run: npm i && npm run build
         working-directory: join
 
-      - name: Install dependencies for order form
+      - name: order form
         run: npm i && npm run build
         working-directory: order
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Publishing Website
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          commit_message: 'Automated Update'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
