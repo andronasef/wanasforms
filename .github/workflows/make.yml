@@ -11,11 +11,11 @@ jobs:
       - uses: actions/setup-node@v2
 
       - name: Install dependencies for join form
-        run: npm i & npm run build
+        run: npm i && npm run build
         working-directory: join
 
       - name: Install dependencies for order form
-        run: npm i & npm run build
+        run: npm i && npm run build
         working-directory: order
 
       - uses: stefanzweifel/git-auto-commit-action@v4
