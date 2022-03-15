@@ -1,7 +1,7 @@
 {
   "fvv": 1,
   "pageHistory": 0,
-  "fbzx": "7304934681649252475",
+  "fbzx": "19340293656860042",
   "action": "e/1FAIpQLSfBOIeX8YcMJevDyLJv_nIKdMFbSEm9on70ZYQSc1W42pH6bw",
   "fields": [
     {
@@ -71,7 +71,7 @@
       "required": true
     },
     {
-      "label": "كوبون خصم",
+      "label": "كود خصم زي wanas10",
       "type": "SHORT_ANSWER",
       "id": "1917999913",
       "required": true

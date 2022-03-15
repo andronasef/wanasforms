@@ -2,7 +2,7 @@
   import googleForm from './form.json'
   import { slide } from 'svelte/transition'
 
-  let fileds = googleForm.fields.filter((field) => field.type != undefined)
+  // let fileds = googleForm.fields.filter((field) => field.type != undefined)
   let filedsForCustomer = googleForm.fields
     .filter((field) => field.type != undefined)
     .slice(0, 4)
