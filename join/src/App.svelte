@@ -12,7 +12,7 @@
 
 <div
   data-theme="mytheme"
-  class="text-[#3A4F66] px-10 lg:px-1/3 py-15"
+  class="py-15 px-10 text-[#3A4F66] lg:px-1/3"
   dir="rtl"
 >
   {#if !completed}
@@ -22,6 +22,7 @@
       method="post"
       target="form"
       transition:slide
+      id="JoinWanas"
     >
       <iframe
         class="visibility: hidden"
@@ -35,7 +36,7 @@
         <div class="!form-control">
           <!-- svelte-ignore a11y-label-has-associated-control -->
           <label class="!label">
-            <span class="!label-text text-lg">{filed.label.split('زي')[0]}</span
+            <span class="text-lg !label-text">{filed.label.split('زي')[0]}</span
             >
           </label>
           {#if filed.type == 'LONG_ANSWER'}
@@ -57,11 +58,11 @@
         </div>
       {/each}
       <button
-        class="btn btn-primary hover:bg-primary-focus text-white mt-5 w-full"
+        class="mt-5 text-white w-full btn btn-primary hover:bg-primary-focus"
         type="submit">سجل طلبك</button
       >
     </form>
   {:else}
-    <div class="text-xl font-bold ">لقد تم تسجيل طلبك بنجاح</div>
+    <div class="font-bold text-xl ">لقد تم تسجيل طلبك بنجاح</div>
   {/if}
 </div>
